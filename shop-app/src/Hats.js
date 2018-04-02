@@ -16,7 +16,7 @@ class Hats extends React.Component {
         });
         let titleStyle = {
             fontFamily: "Love Ya Like A Sister",
-        }
+        };
         return (
             <div>
                 <h1 style={titleStyle}>Hats Page</h1>

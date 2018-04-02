@@ -110,6 +110,9 @@ class Shop extends React.Component {
         let productButton = {
             backgroundColor: "#91DDEB"
         };
+        let itemStyle = {
+            textAlign: 'center',
+        };
         return (
             <div>
                 <div style={shopBanner}>
@@ -128,7 +131,7 @@ class Shop extends React.Component {
                     </div> 
                 </div>
                 <Cart cart={this.state.cart} clearCart={this.clearCart} total={this.state.total}/>
-                <div className="container">
+                <div className="container" style={itemStyle}>
                     <Switch>
                         <Route path= "/Shop/Hats"
                                render={(props)=> {return <Hats hats= {this.state.hats} 
